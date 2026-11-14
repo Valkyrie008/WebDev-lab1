@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+.dummy-content {
+    flex-grow: 1; /* Pushes the footer down */
+    padding: 50px;
+    text-align: center;
+}
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    color: #ffffff;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1; /* Pushes nav to the center/right */
+}
+.header-nav {
+    display: flex;
+    gap: 30px;
+    flex: 2; /* Takes up more space to center links nicely */
+    justify-content: center;
+}
+.header-nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+.header-nav a:hover {
+    color: #ffffff;
+}
+.header-contact {
+    flex: 1; /* Matches logo flex to keep nav centered */
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.portfolio-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 200px; /* Flexible sizing: grow, shrink, base width */
+}
+.footer-section h3, .footer-section h4 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+}
+.footer-section a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: #ffffff;
+}

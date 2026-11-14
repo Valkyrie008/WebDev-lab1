@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    padding: 40px 20px;
+}
+.portfolio-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-card h3 {
+    margin: 0 0 10px 0;
+    color: #0056b3;
+}
+.feature-project {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #e3f2fd; 
+}
+.wide-project {
+    grid-column: span 2;
+}
+.tall-project {
+    grid-row: span 2;
+    background-color: #fdf2e3; 
+}
+.standard-project {
+    grid-column: span 1;
+    grid-row: span 1;
+}

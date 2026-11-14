@@ -1,0 +1,51 @@
+body {
+    background-color: #f4f1ea;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222222;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.newspaper-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.headline {
+    grid-column: 1 / -1; 
+    text-align: center;
+    border-bottom: 4px double #222222;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.headline h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.main-article {
+    grid-column: 1 / span 2;
+}
+.main-article h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+.article-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.side-news {
+    grid-column: 3 / 4;
+    border-left: 2px solid #dddddd;
+    padding-left: 20px;
+}
+.sub-article {
+    border-top: 1px solid #dddddd;
+    padding-top: 15px;
+}
